@@ -3,7 +3,7 @@
         <div class="card-details">
             <p id="card-name">{{pokemon.name}}</p>
             <p id="card-number">n°{{pokemon.number}}</p>
-            <p id="card-type">{{pokemon.type}}</p>
+            <p id="card-type" [style.color]="color">{{pokemon.type}}</p>
         </div><br>
         <img src={{pokemon.imageUrl}} alt="Pikachu" class="card-img">
     </div>

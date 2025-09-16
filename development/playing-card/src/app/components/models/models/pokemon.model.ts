@@ -1,10 +1,10 @@
-import { PokemonType } from "../../utils/pokemon.utils";
+
 
 export class Pokemon {
 
     name: string = 'Bulbizarre';
     number: string = '001';
-    type: PokemonType | string = 'Plante';
+    type: string = 'Plante';
     imageUrl: string = 'img/bulbizarre.png'; 
     
 }

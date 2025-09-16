@@ -1,5 +1,7 @@
-import { Component, input, Input, InputSignal } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Pokemon } from '../models/pokemon.model';
+import { PokemonTypeProperties } from '../../utils/pokemon.utils';
+
 
 @Component({
   selector: 'app-playing-card',
@@ -11,4 +13,7 @@ export class PlayingCardComponent {
 
   @Input() pokemon = new Pokemon();
 
+  get color(): string {
+    return PokemonTypeProperties[this.pokemon.type]?.color || 'lightgray';
+  }
 }
