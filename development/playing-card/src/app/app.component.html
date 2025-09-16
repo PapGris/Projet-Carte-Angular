@@ -1,5 +1,13 @@
-
-<div id="card-list">
-    <app-playing-card [pokemon]="pokemon1" />
-    <app-playing-card [pokemon]="pokemon1"/>
+<img src="img/bg.jpg" alt="background" id="bg">
+<div>
+    <app-search-bar 
+    (searchButtonClicked)="increaseCount()"
+    [(search)]="search"
+    />
+</div>
+<div  id="card-list">
+    <div id="card-container">
+    <app-playing-card [pokemon]="pokemons[selectedPokemonIndex]" />
+    <button (click)="evolvePokemon()">Evoluer</button>
+    </div>
 </div>

@@ -9,6 +9,6 @@ import { Pokemon } from '../models/pokemon.model';
 })
 export class PlayingCardComponent {
 
-  pokemon: InputSignal<Pokemon> = input(new Pokemon());
+  @Input() pokemon = new Pokemon();
 
 }

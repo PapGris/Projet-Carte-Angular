@@ -28,6 +28,12 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #f9f9f9;
     padding: 0 5px;
+    width: 280px;
+    transition: transform 0.5s ease;
+    
+        &:hover {
+            transform: scale(1.05);
+        }
 }
 
 #card-name {
@@ -48,4 +54,9 @@
 img {
     max-width: 100%;
     height: auto;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.347);
+    transition: transform 0.3s ease;
+        &:hover {
+            transform: scale(1.10);
+        }
 }
