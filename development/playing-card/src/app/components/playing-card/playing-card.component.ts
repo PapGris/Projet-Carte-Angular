@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Pokemon } from '../models/pokemon.model';
-import { PokemonTypeProperties } from '../../utils/pokemon.utils';
+import { PokemonTypeProperties } from '../utils/pokemon.utils';
 
 
 @Component({

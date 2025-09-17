@@ -1,6 +1,6 @@
 import { Component } from '@angular/core'
-import { PlayingCardComponent } from "./components/models/playing-card/playing-card.component";
-import { Pokemon } from './components/models/models/pokemon.model';
+import { PlayingCardComponent } from "./components/playing-card/playing-card.component";
+import { Pokemon } from './components/models/pokemon.model';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';  
 
 @Component({
@@ -42,6 +42,27 @@ export class AppComponent {
     pokemon3.type = 'Plante';
     pokemon3.imageUrl = 'img/florizarre.png';
     this.pokemons.push(pokemon3);
+
+    const pokemon4 = new Pokemon();
+    pokemon4.name = 'Salamèche';
+    pokemon4.number = '004';
+    pokemon4.type = 'Feu';
+    pokemon4.imageUrl = 'img/salameche.png';
+    this.pokemons.push(pokemon4);
+
+    const pokemon5 = new Pokemon();
+    pokemon5.name = 'Reptincel';
+    pokemon5.number = '005';
+    pokemon5.type = 'Feu';
+    pokemon5.imageUrl = 'img/reptincel.png';
+    this.pokemons.push(pokemon5);
+
+    const pokemon6 = new Pokemon();
+    pokemon6.name = 'Dracaufeu';
+    pokemon6.number = '006';
+    pokemon6.type = 'Feu';
+    pokemon6.imageUrl = 'img/dracaufeu.png';
+    this.pokemons.push(pokemon6);
   }
 
   increaseCount() {

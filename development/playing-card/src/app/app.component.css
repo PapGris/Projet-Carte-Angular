@@ -10,7 +10,8 @@
 
 #card-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
